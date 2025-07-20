@@ -16,7 +16,7 @@ class ImageLoader:
     def load_images(folder_path, scale):
         images = []
         folder_path = utils.get_path(folder_path)
-        paths = [os.path.join(folder_path, image_name) for image_name in os.listdir(folder_path)]
+        paths = [os.path.join(folder_path, image_name) for image_name in sorted(os.listdir(folder_path))]
         for path in paths:
             img = ImageLoader.load_image(path, scale)
             images.append(img)

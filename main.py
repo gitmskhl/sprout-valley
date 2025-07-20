@@ -41,6 +41,15 @@ class App:
                         self.main_player.move[2] = True
                     elif event.key == keyboard.KEY_BINDINGS['left']:
                         self.main_player.move[3] = True
+                    elif event.key == keyboard.KEY_BINDINGS['use_tool']:
+                        self.main_player.use_tool()
+                    elif event.key == keyboard.KEY_BINDINGS['switch_tool']:
+                        self.main_player.switch_tool()
+                    elif event.key == keyboard.KEY_BINDINGS['use_seed']:
+                        self.main_player.use_seed()
+                    elif event.key == keyboard.KEY_BINDINGS['switch_seed']:
+                        self.main_player.switch_seed()
+                    
 
                 elif event.type == pygame.KEYUP:
                     if event.key == keyboard.KEY_BINDINGS['up']:
