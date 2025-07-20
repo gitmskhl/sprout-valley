@@ -12,7 +12,7 @@ class App:
         # camera
         self.camera = [0, 0]
         # main player
-        self.main_player = player.Player((100, 100), (10, 10))
+        self.main_player = player.Player((100, 100), (3, 3))
 
     def _init_display(self):
         settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT = pygame.display.get_desktop_sizes()[0]
