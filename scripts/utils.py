@@ -7,7 +7,7 @@ def get_path(path: str) -> str:
 
 def load_image(path: str, scale: float) -> pygame.Surface :
     path = get_path(path)
-    img = pygame.image.load(path)
+    img = pygame.image.load(path).convert_alpha()
     if scale != 1:
         w, h = img.get_size()
         img = pygame.transform.scale(img, (w * scale, h * scale))

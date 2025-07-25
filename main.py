@@ -1,6 +1,6 @@
 import pygame
 
-from scripts import settings, player, keyboard
+from scripts import settings, player, keyboard, ui
 
 class App:
     def __init__(self):
@@ -13,9 +13,12 @@ class App:
         self.camera = [0, 0]
         # main player
         self.main_player = player.Player((100, 100), (3, 3))
+        # ui
+        self.ui = ui.UI(self)
 
     def _init_display(self):
         settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT = pygame.display.get_desktop_sizes()[0]
+        settings.SCREEN_HEIGHT -= 80
         self.main_display = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
         self.display = pygame.Surface((settings.SCREEN_WIDTH // 2, settings.SCREEN_HEIGHT // 2))
         pygame.display.set_caption("Sprout Valley")
@@ -25,8 +28,12 @@ class App:
             self.clock.tick(settings.FPS)
             self.display.fill("black")
             
+            # main player
             self.main_player.update()
             self.main_player.render(self.display, self.camera)
+
+            # ui
+            self.ui.display()
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
