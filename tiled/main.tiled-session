@@ -1,0 +1,122 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "main.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Все файлы (*)",
+    "fileStates": {
+        "/home/musa/study/python/pygame/rpg-how-pokemon/maps/mappp.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 3360,
+                "y": 2176
+            }
+        },
+        "/home/musa/study/python/pygame/rpg-how-pokemon/maps/mappp.tmx#Floor": {
+            "scaleInDock": 1
+        },
+        "Basic_Grass_Biom_things.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "Bitmask references 1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Bitmask references 2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Doors.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 2
+        },
+        "Fences.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "Hills.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "Tilled_Dirt.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        },
+        "Tilled_Dirt_Wide.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Tilled_Dirt_v2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Water.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Wooden_House_Roof_Tilset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Wooden_House_Walls_Tilset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "main.tmx": {
+            "scale": 2,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 323.5,
+                "y": 170
+            }
+        },
+        "tsx/Grass.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        }
+    },
+    "last.imagePath": "/home/musa/study/python/pygame/sprout-valley/origin_data/Objects",
+    "map.height": 60,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 80,
+    "openFiles": [
+        "main.tmx",
+        "Hills.tsx",
+        "tsx/Grass.tsx",
+        "Water.tsx",
+        "Fences.tsx",
+        "Doors.tsx",
+        "Tilled_Dirt.tsx",
+        "Tilled_Dirt_v2.tsx",
+        "Tilled_Dirt_Wide.tsx",
+        "Wooden_House_Walls_Tilset.tsx",
+        "Basic_Grass_Biom_things.tsx"
+    ],
+    "project": "main.tiled-project",
+    "recentFiles": [
+        "Basic_Grass_Biom_things.tsx",
+        "Wooden_House_Walls_Tilset.tsx",
+        "Tilled_Dirt_Wide.tsx",
+        "Tilled_Dirt_v2.tsx",
+        "Tilled_Dirt.tsx",
+        "Doors.tsx",
+        "Fences.tsx",
+        "Water.tsx",
+        "tsx/Grass.tsx",
+        "Hills.tsx",
+        "main.tmx",
+        "/home/musa/study/python/pygame/rpg-how-pokemon/maps/mappp.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

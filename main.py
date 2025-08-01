@@ -1,6 +1,6 @@
 import pygame
 
-from scripts import settings, player, keyboard, ui
+from scripts import settings, player, keyboard, ui, map
 
 class App:
     def __init__(self):
@@ -15,6 +15,8 @@ class App:
         self.main_player = player.Player((100, 100), (3, 3))
         # ui
         self.ui = ui.UI(self)
+        # map
+        self.map = map.Map()
 
     def _init_display(self):
         settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT = pygame.display.get_desktop_sizes()[0]
@@ -28,12 +30,21 @@ class App:
             self.clock.tick(settings.FPS)
             self.display.fill("black")
             
+            # map
+            self.map.update()
+            self.map.render(self.display, self.camera)
+
             # main player
             self.main_player.update()
             self.main_player.render(self.display, self.camera)
 
             # ui
             self.ui.display()
+
+            # camera movement
+            self.camera[0] += (self.main_player.pos[0] - settings.SCREEN_WIDTH // 4 - self.camera[0]) / 30
+            self.camera[1] += (self.main_player.pos[1] - settings.SCREEN_HEIGHT // 4 - self.camera[1]) / 30
+
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
