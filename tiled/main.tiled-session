@@ -8,11 +8,11 @@
     ],
     "fileStates": {
         "main-map.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 6,
+            "scale": 0.33,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 874,
-                "y": 730
+                "x": 721.212121212121,
+                "y": 1066.6666666666665
             }
         },
         "tsx/Grass.tsx": {
@@ -25,10 +25,12 @@
             "scaleInEditor": 3
         },
         "tsx/Tilled_Dirt_Wide.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1.5,
             "scaleInEditor": 1
         },
         "tsx/Water.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 4,
             "scaleInEditor": 3
         },
@@ -61,6 +63,7 @@
         "tsx/Grass.tsx",
         "main-map.tmx"
     ],
+    "resizeMap.removeObjects": false,
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
         "height": 16,
