@@ -42,8 +42,8 @@ class App:
             self.ui.display()
 
             # camera movement
-            self.camera[0] += (self.main_player.pos[0] - settings.SCREEN_WIDTH // 4 - self.camera[0]) / 30
-            self.camera[1] += (self.main_player.pos[1] - settings.SCREEN_HEIGHT // 4 - self.camera[1]) / 30
+            self.camera[0] += (self.main_player.pos[0] - settings.SCREEN_WIDTH // 4 - self.camera[0]) // 30
+            self.camera[1] += (self.main_player.pos[1] - settings.SCREEN_HEIGHT // 4 - self.camera[1]) // 30
 
 
             for event in pygame.event.get():
