@@ -41,7 +41,7 @@ class Animation:
 
 
 class FolderAnimation(Animation):
-    def __init__(self, folder_path: str, scale: int, period: int, repeat: bool=True):
+    def __init__(self, folder_path: str, scale: int | float, period: int, repeat: bool=True):
         images = ImageLoader.load_images(folder_path, scale)
         super().__init__(images, period, repeat)
 
@@ -50,7 +50,7 @@ class AnimationManager:
     def __init__(
             self,
              folder_path: str,
-             scales: list[int] | int,
+             scales: list[int | float] | int | float,
              periods: list[int] | int,
              repeats: list[bool] | bool
     ):
